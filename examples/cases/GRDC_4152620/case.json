@@ -1,0 +1,67 @@
+{
+  "id": "GRDC_4152620",
+  "label": "Arid (Colorado Plateau, Utah, USA)",
+  "country": "US",
+  "gauge_lat": 38.0942,
+  "gauge_lon": -110.4074,
+  "area_km2": 10771.8,
+  "n_cells": 143,
+  "aridity_pet_over_p": 3.337,
+  "heldout_fold": 9,
+  "observations": "GRDC-Caravan extension (Global Runoff Data Centre via Caravan), CC BY 4.0; all hydrological data remain property of the owner",
+  "periods": {
+    "spinup": "2001-2002",
+    "test": "2003-2011",
+    "train": "2012-01-01..2020-12-30"
+  },
+  "skill": {
+    "imerg_final": {
+      "heldout_network_test_2003_2011": {
+        "kge": -0.154,
+        "r": 0.229,
+        "alpha": 0.145,
+        "beta": 1.077,
+        "n_days": 3287
+      },
+      "released_params_test_2003_2011": {
+        "kge": -0.169,
+        "r": 0.112,
+        "alpha": 0.24,
+        "beta": 0.996,
+        "n_days": 3287
+      },
+      "released_params_train_2012_2020": {
+        "kge": -0.108,
+        "r": -0.02,
+        "alpha": 0.567,
+        "beta": 1.026,
+        "n_days": 3285
+      }
+    },
+    "mswep": {
+      "heldout_network_test_2003_2011": {
+        "kge": -0.277,
+        "r": 0.121,
+        "alpha": 0.186,
+        "beta": 1.44,
+        "n_days": 3287
+      },
+      "released_params_test_2003_2011": {
+        "kge": -0.166,
+        "r": 0.193,
+        "alpha": 0.164,
+        "beta": 1.098,
+        "n_days": 3287
+      },
+      "released_params_train_2012_2020": {
+        "kge": -0.149,
+        "r": 0.097,
+        "alpha": 0.294,
+        "beta": 0.92,
+        "n_days": 3285
+      }
+    },
+    "note": "heldout_network: the fold network that never saw this basin (the out-of-sample estimate). released_params: ten-fold median, 9 of whose 10 networks trained on this basin, so its scores are partly in-sample."
+  },
+  "units": "discharge as basin-mean runoff depth, mm/day; m3/s = mm/day x area_km2 / 86.4"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "GRDC_4214690",
+  "label": "Snow-dominated (James Bay region, Quebec, Canada)",
+  "country": "CA",
+  "gauge_lat": 51.5336,
+  "gauge_lon": -78.0969,
+  "area_km2": 6090.0,
+  "n_cells": 115,
+  "aridity_pet_over_p": 0.619,
+  "heldout_fold": 2,
+  "observations": "GRDC-Caravan extension (Global Runoff Data Centre via Caravan), CC BY 4.0; all hydrological data remain property of the owner",
+  "periods": {
+    "spinup": "2001-2002",
+    "test": "2003-2011",
+    "train": "2012-01-01..2020-12-30"
+  },
+  "skill": {
+    "imerg_final": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.567,
+        "r": 0.695,
+        "alpha": 0.695,
+        "beta": 1.042,
+        "n_days": 2048
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.588,
+        "r": 0.715,
+        "alpha": 0.713,
+        "beta": 1.077,
+        "n_days": 2048
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.553,
+        "r": 0.688,
+        "alpha": 0.682,
+        "beta": 1.036,
+        "n_days": 2115
+      }
+    },
+    "mswep": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.491,
+        "r": 0.761,
+        "alpha": 0.568,
+        "beta": 1.124,
+        "n_days": 2048
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.515,
+        "r": 0.752,
+        "alpha": 0.673,
+        "beta": 1.259,
+        "n_days": 2048
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.527,
+        "r": 0.82,
+        "alpha": 0.564,
+        "beta": 1.026,
+        "n_days": 2115
+      }
+    },
+    "note": "heldout_network: the fold network that never saw this basin (the out-of-sample estimate). released_params: ten-fold median, 9 of whose 10 networks trained on this basin, so its scores are partly in-sample."
+  },
+  "units": "discharge as basin-mean runoff depth, mm/day; m3/s = mm/day x area_km2 / 86.4"
+}

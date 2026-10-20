@@ -1,0 +1,67 @@
+{
+  "id": "GRDC_3662550",
+  "label": "South America, typical (Parana state, Brazil)",
+  "country": "BR",
+  "gauge_lat": -24.74861,
+  "gauge_lon": -52.70278,
+  "area_km2": 2513.0,
+  "n_cells": 34,
+  "aridity_pet_over_p": 0.635,
+  "heldout_fold": 2,
+  "observations": "GRDC-Caravan extension (Global Runoff Data Centre via Caravan), CC BY 4.0; all hydrological data remain property of the owner",
+  "periods": {
+    "spinup": "2001-2002",
+    "test": "2003-2011",
+    "train": "2012-01-01..2020-12-30"
+  },
+  "skill": {
+    "imerg_final": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.44,
+        "r": 0.794,
+        "alpha": 0.536,
+        "beta": 0.763,
+        "n_days": 3287
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.743,
+        "r": 0.822,
+        "alpha": 0.815,
+        "beta": 1.007,
+        "n_days": 3287
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.608,
+        "r": 0.668,
+        "alpha": 0.794,
+        "beta": 0.972,
+        "n_days": 2678
+      }
+    },
+    "mswep": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.737,
+        "r": 0.844,
+        "alpha": 0.788,
+        "beta": 1.01,
+        "n_days": 3287
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.764,
+        "r": 0.84,
+        "alpha": 0.866,
+        "beta": 1.109,
+        "n_days": 3287
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.728,
+        "r": 0.791,
+        "alpha": 0.827,
+        "beta": 1.02,
+        "n_days": 2678
+      }
+    },
+    "note": "heldout_network: the fold network that never saw this basin (the out-of-sample estimate). released_params: ten-fold median, 9 of whose 10 networks trained on this basin, so its scores are partly in-sample."
+  },
+  "units": "discharge as basin-mean runoff depth, mm/day; m3/s = mm/day x area_km2 / 86.4"
+}

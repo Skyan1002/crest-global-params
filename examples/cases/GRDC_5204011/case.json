@@ -1,0 +1,67 @@
+{
+  "id": "GRDC_5204011",
+  "label": "SW Pacific, typical (southern New South Wales, Australia)",
+  "country": "AU",
+  "gauge_lat": -35.69,
+  "gauge_lon": 146.72,
+  "area_km2": 2808.0,
+  "n_cells": 44,
+  "aridity_pet_over_p": 1.42,
+  "heldout_fold": 5,
+  "observations": "GRDC-Caravan extension (Global Runoff Data Centre via Caravan), CC BY 4.0; all hydrological data remain property of the owner",
+  "periods": {
+    "spinup": "2001-2002",
+    "test": "2003-2011",
+    "train": "2012-01-01..2020-12-30"
+  },
+  "skill": {
+    "imerg_final": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.32,
+        "r": 0.565,
+        "alpha": 0.486,
+        "beta": 1.097,
+        "n_days": 3287
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.091,
+        "r": 0.505,
+        "alpha": 0.334,
+        "beta": 0.629,
+        "n_days": 3287
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.621,
+        "r": 0.79,
+        "alpha": 0.685,
+        "beta": 1.03,
+        "n_days": 2616
+      }
+    },
+    "mswep": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.669,
+        "r": 0.796,
+        "alpha": 0.754,
+        "beta": 1.086,
+        "n_days": 3287
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.469,
+        "r": 0.757,
+        "alpha": 0.611,
+        "beta": 0.732,
+        "n_days": 3287
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.719,
+        "r": 0.868,
+        "alpha": 0.789,
+        "beta": 0.87,
+        "n_days": 2616
+      }
+    },
+    "note": "heldout_network: the fold network that never saw this basin (the out-of-sample estimate). released_params: ten-fold median, 9 of whose 10 networks trained on this basin, so its scores are partly in-sample."
+  },
+  "units": "discharge as basin-mean runoff depth, mm/day; m3/s = mm/day x area_km2 / 86.4"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "GRDC_6342970",
+  "label": "Europe, typical (southern Germany)",
+  "country": "DE",
+  "gauge_lat": 48.072465,
+  "gauge_lon": 9.396086,
+  "area_km2": 2621.0,
+  "n_cells": 55,
+  "aridity_pet_over_p": 0.57,
+  "heldout_fold": 5,
+  "observations": "GRDC-Caravan extension (Global Runoff Data Centre via Caravan), CC BY 4.0; all hydrological data remain property of the owner",
+  "periods": {
+    "spinup": "2001-2002",
+    "test": "2003-2011",
+    "train": "2012-01-01..2020-12-30"
+  },
+  "skill": {
+    "imerg_final": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.482,
+        "r": 0.788,
+        "alpha": 1.449,
+        "beta": 1.147,
+        "n_days": 3287
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.755,
+        "r": 0.798,
+        "alpha": 1.137,
+        "beta": 0.973,
+        "n_days": 3287
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.707,
+        "r": 0.78,
+        "alpha": 1.167,
+        "beta": 1.098,
+        "n_days": 3287
+      }
+    },
+    "mswep": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.556,
+        "r": 0.9,
+        "alpha": 1.348,
+        "beta": 1.258,
+        "n_days": 3287
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.856,
+        "r": 0.913,
+        "alpha": 1.048,
+        "beta": 1.104,
+        "n_days": 3287
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.789,
+        "r": 0.915,
+        "alpha": 1.125,
+        "beta": 1.147,
+        "n_days": 3287
+      }
+    },
+    "note": "heldout_network: the fold network that never saw this basin (the out-of-sample estimate). released_params: ten-fold median, 9 of whose 10 networks trained on this basin, so its scores are partly in-sample."
+  },
+  "units": "discharge as basin-mean runoff depth, mm/day; m3/s = mm/day x area_km2 / 86.4"
+}

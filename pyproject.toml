@@ -1,0 +1,18 @@
+[project]
+name = "crest-global"
+version = "1.0.0"
+description = "Run dCREST with the global 0.1-degree IMERG Final and MSWEP parameter sets"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy", "torch", "h5py", "netCDF4"]
+
+[project.optional-dependencies]
+polygons = ["shapely"]
+examples = ["matplotlib", "pytest"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["crest_global"]

@@ -1,0 +1,67 @@
+{
+  "id": "GRDC_4235301",
+  "label": "North America, typical (southwestern Ontario, Canada)",
+  "country": "CA",
+  "gauge_lat": 42.9631,
+  "gauge_lon": -81.3319,
+  "area_km2": 3110.0,
+  "n_cells": 52,
+  "aridity_pet_over_p": 0.715,
+  "heldout_fold": 6,
+  "observations": "GRDC-Caravan extension (Global Runoff Data Centre via Caravan), CC BY 4.0; all hydrological data remain property of the owner",
+  "periods": {
+    "spinup": "2001-2002",
+    "test": "2003-2011",
+    "train": "2012-01-01..2020-12-30"
+  },
+  "skill": {
+    "imerg_final": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.461,
+        "r": 0.724,
+        "alpha": 0.598,
+        "beta": 0.771,
+        "n_days": 3287
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.633,
+        "r": 0.745,
+        "alpha": 0.757,
+        "beta": 0.897,
+        "n_days": 3287
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.736,
+        "r": 0.813,
+        "alpha": 0.815,
+        "beta": 0.977,
+        "n_days": 3287
+      }
+    },
+    "mswep": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.631,
+        "r": 0.695,
+        "alpha": 0.797,
+        "beta": 0.956,
+        "n_days": 3287
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.714,
+        "r": 0.724,
+        "alpha": 0.933,
+        "beta": 1.029,
+        "n_days": 3287
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.768,
+        "r": 0.818,
+        "alpha": 0.856,
+        "beta": 0.99,
+        "n_days": 3287
+      }
+    },
+    "note": "heldout_network: the fold network that never saw this basin (the out-of-sample estimate). released_params: ten-fold median, 9 of whose 10 networks trained on this basin, so its scores are partly in-sample."
+  },
+  "units": "discharge as basin-mean runoff depth, mm/day; m3/s = mm/day x area_km2 / 86.4"
+}

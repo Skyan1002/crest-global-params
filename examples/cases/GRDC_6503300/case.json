@@ -1,0 +1,67 @@
+{
+  "id": "GRDC_6503300",
+  "label": "Humid, high skill (southeastern Ireland)",
+  "country": "IE",
+  "gauge_lat": 52.50076972,
+  "gauge_lon": -7.091699722,
+  "area_km2": 2388.0,
+  "n_cells": 47,
+  "aridity_pet_over_p": 0.522,
+  "heldout_fold": 9,
+  "observations": "GRDC-Caravan extension (Global Runoff Data Centre via Caravan), CC BY 4.0; all hydrological data remain property of the owner",
+  "periods": {
+    "spinup": "2001-2002",
+    "test": "2003-2011",
+    "train": "2012-01-01..2020-12-30"
+  },
+  "skill": {
+    "imerg_final": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.792,
+        "r": 0.825,
+        "alpha": 0.906,
+        "beta": 0.94,
+        "n_days": 2929
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.754,
+        "r": 0.836,
+        "alpha": 0.867,
+        "beta": 0.873,
+        "n_days": 2929
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.85,
+        "r": 0.876,
+        "alpha": 0.935,
+        "beta": 0.947,
+        "n_days": 3137
+      }
+    },
+    "mswep": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.883,
+        "r": 0.906,
+        "alpha": 0.967,
+        "beta": 0.939,
+        "n_days": 2929
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.831,
+        "r": 0.898,
+        "alpha": 0.915,
+        "beta": 0.895,
+        "n_days": 2929
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.847,
+        "r": 0.924,
+        "alpha": 0.918,
+        "beta": 0.895,
+        "n_days": 3137
+      }
+    },
+    "note": "heldout_network: the fold network that never saw this basin (the out-of-sample estimate). released_params: ten-fold median, 9 of whose 10 networks trained on this basin, so its scores are partly in-sample."
+  },
+  "units": "discharge as basin-mean runoff depth, mm/day; m3/s = mm/day x area_km2 / 86.4"
+}

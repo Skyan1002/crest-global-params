@@ -1,0 +1,90 @@
+[
+ {
+  "id": "GRDC_6342970",
+  "label": "Europe, typical (southern Germany)",
+  "area_km2": 2621.0,
+  "n_cells": 55,
+  "kge_final_heldout": 0.482,
+  "kge_mswep_heldout": 0.556,
+  "kge_final_released": 0.755,
+  "kge_mswep_released": 0.856,
+  "mswep_fidelity_maxabs": 0.00426483154296875
+ },
+ {
+  "id": "GRDC_4235301",
+  "label": "North America, typical (southwestern Ontario, Canada)",
+  "area_km2": 3110.0,
+  "n_cells": 52,
+  "kge_final_heldout": 0.461,
+  "kge_mswep_heldout": 0.631,
+  "kge_final_released": 0.633,
+  "kge_mswep_released": 0.714,
+  "mswep_fidelity_maxabs": 0.007287025451660156
+ },
+ {
+  "id": "GRDC_3662550",
+  "label": "South America, typical (Parana state, Brazil)",
+  "area_km2": 2513.0,
+  "n_cells": 34,
+  "kge_final_heldout": 0.44,
+  "kge_mswep_heldout": 0.737,
+  "kge_final_released": 0.743,
+  "kge_mswep_released": 0.764,
+  "mswep_fidelity_maxabs": 0.02422332763671875
+ },
+ {
+  "id": "GRDC_5204011",
+  "label": "SW Pacific, typical (southern New South Wales, Australia)",
+  "area_km2": 2808.0,
+  "n_cells": 44,
+  "kge_final_heldout": 0.32,
+  "kge_mswep_heldout": 0.669,
+  "kge_final_released": 0.091,
+  "kge_mswep_released": 0.469,
+  "mswep_fidelity_maxabs": 0.004182338714599609
+ },
+ {
+  "id": "GRDC_1160304",
+  "label": "Africa, typical (Western Cape, South Africa)",
+  "area_km2": 4355.0,
+  "n_cells": 61,
+  "kge_final_heldout": 0.125,
+  "kge_mswep_heldout": 0.065,
+  "kge_final_released": 0.596,
+  "kge_mswep_released": 0.371,
+  "mswep_fidelity_maxabs": 0.005753517150878906
+ },
+ {
+  "id": "GRDC_4214690",
+  "label": "Snow-dominated (James Bay region, Quebec, Canada)",
+  "area_km2": 6090.0,
+  "n_cells": 115,
+  "kge_final_heldout": 0.567,
+  "kge_mswep_heldout": 0.491,
+  "kge_final_released": 0.588,
+  "kge_mswep_released": 0.515,
+  "mswep_fidelity_maxabs": 0.0026040077209472656
+ },
+ {
+  "id": "GRDC_6503300",
+  "label": "Humid, high skill (southeastern Ireland)",
+  "area_km2": 2388.0,
+  "n_cells": 47,
+  "kge_final_heldout": 0.792,
+  "kge_mswep_heldout": 0.883,
+  "kge_final_released": 0.754,
+  "kge_mswep_released": 0.831,
+  "mswep_fidelity_maxabs": 0.0042266845703125
+ },
+ {
+  "id": "GRDC_4152620",
+  "label": "Arid (Colorado Plateau, Utah, USA)",
+  "area_km2": 10771.8,
+  "n_cells": 143,
+  "kge_final_heldout": -0.154,
+  "kge_mswep_heldout": -0.277,
+  "kge_final_released": -0.169,
+  "kge_mswep_released": -0.166,
+  "mswep_fidelity_maxabs": 0.0006782114505767822
+ }
+]

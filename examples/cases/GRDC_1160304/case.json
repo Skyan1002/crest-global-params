@@ -1,0 +1,67 @@
+{
+  "id": "GRDC_1160304",
+  "label": "Africa, typical (Western Cape, South Africa)",
+  "country": "ZA",
+  "gauge_lat": -33.81805556,
+  "gauge_lon": 19.69333333,
+  "area_km2": 4355.0,
+  "n_cells": 61,
+  "aridity_pet_over_p": 2.156,
+  "heldout_fold": 2,
+  "observations": "GRDC-Caravan extension (Global Runoff Data Centre via Caravan), CC BY 4.0; all hydrological data remain property of the owner",
+  "periods": {
+    "spinup": "2001-2002",
+    "test": "2003-2011",
+    "train": "2012-01-01..2020-12-30"
+  },
+  "skill": {
+    "imerg_final": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.125,
+        "r": 0.667,
+        "alpha": 0.354,
+        "beta": 0.514,
+        "n_days": 3287
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.596,
+        "r": 0.705,
+        "alpha": 0.724,
+        "beta": 1.022,
+        "n_days": 3287
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.33,
+        "r": 0.611,
+        "alpha": 0.542,
+        "beta": 0.702,
+        "n_days": 3257
+      }
+    },
+    "mswep": {
+      "heldout_network_test_2003_2011": {
+        "kge": 0.065,
+        "r": 0.544,
+        "alpha": 0.378,
+        "beta": 0.472,
+        "n_days": 3287
+      },
+      "released_params_test_2003_2011": {
+        "kge": 0.371,
+        "r": 0.706,
+        "alpha": 0.512,
+        "beta": 0.732,
+        "n_days": 3287
+      },
+      "released_params_train_2012_2020": {
+        "kge": 0.416,
+        "r": 0.772,
+        "alpha": 0.526,
+        "beta": 0.747,
+        "n_days": 3257
+      }
+    },
+    "note": "heldout_network: the fold network that never saw this basin (the out-of-sample estimate). released_params: ten-fold median, 9 of whose 10 networks trained on this basin, so its scores are partly in-sample."
+  },
+  "units": "discharge as basin-mean runoff depth, mm/day; m3/s = mm/day x area_km2 / 86.4"
+}
